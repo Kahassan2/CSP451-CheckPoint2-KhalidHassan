@@ -8,3 +8,18 @@ button { padding: 10px 14px; border: 0; border-radius: 10px; cursor: pointer; }
 .muted { opacity: .75; }
 a { color: #0b57d0; text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+input:focus {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.muted {
+  color: #666;
+  margin-top: 10px;
+}
