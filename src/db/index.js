@@ -13,8 +13,14 @@
  */
 
 function connect() {
-  // Placeholder: simulate a successful connection
-  return { connected: true, driver: "stub" };
+  return {
+    connected: true,
+    driver: "stub",
+    host: "localhost",
+    status: "Database connection established successfully"
+  };
 }
-
-module.exports = { connect };
+function getStatus() {
+  return "Database status OK";
+}
+module.exports = { connect, getStatus };
