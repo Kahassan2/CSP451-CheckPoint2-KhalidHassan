@@ -17,7 +17,7 @@ function connect() {
     connected: true,
     driver: "stub",
     host: "localhost",
-    status: "Database connected successfully"
+    status: "Database connection established successfully"
   };
 }
 function getStatus() {
