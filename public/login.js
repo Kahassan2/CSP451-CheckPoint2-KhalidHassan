@@ -10,12 +10,14 @@ form.addEventListener("submit", async (event) => {
   if (!email || !password) {
     message.textContent = "Please fill in all fields.";
     message.style.color = "red";
+    message.style.fontWeight = "bold";
     return;
   }
 
   if (password.length < 6) {
     message.textContent = "Password must be at least 6 characters.";
     message.style.color = "red";
+    message.style.fontWeight = "bold";
     return;
   }
 
@@ -24,5 +26,6 @@ form.addEventListener("submit", async (event) => {
   setTimeout(() => {
    message.textContent = `Welcome ${email}!`;
 message.style.color = "green";
+message.style.fontWeight = "bold";
   }, 1000);
 });
