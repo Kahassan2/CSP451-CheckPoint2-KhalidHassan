@@ -13,3 +13,11 @@ router.get("/health", (req, res) => {
 });
 
 module.exports = { router };
+
+router.get("/status", (req, res) => {
+  res.json({
+    success: true,
+    message: "API is running successfully"
+    timestamp: new Date().toISOString()
+  });
+});
